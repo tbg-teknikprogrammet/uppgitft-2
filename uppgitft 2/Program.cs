@@ -10,6 +10,14 @@ namespace uppgitft_2
     {
         static void Main(string[] args)
         {
+            string[] text = "1st";
+            int i = 0;
+            while(text[i] != "")
+            {
+                text[i] = Console.ReadLine();
+                i++;
+            }
+            foreach(int i in text )
         }
     }
 }
