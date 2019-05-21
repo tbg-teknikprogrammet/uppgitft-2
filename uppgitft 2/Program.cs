@@ -10,14 +10,21 @@ namespace uppgitft_2
     {
         static void Main(string[] args)
         {
-            string[] text = "1st";
+            string text;
+            string totaltext = "";
+            Console.Write("Output text here: ");
+            text = Console.ReadLine();
+            Console.WriteLine("when done output blank");
             int i = 0;
-            while(text[i] != "")
+            while(text != "")
             {
-                text[i] = Console.ReadLine();
-                i++;
+                Console.Write("Output text here: ");
+                text = Console.ReadLine();
+                Console.WriteLine("when done output blank");
+                totaltext = totaltext + "\n" + text;
             }
-            foreach(int i in text )
+            Console.WriteLine(totaltext);
+            Console.ReadKey();
         }
     }
 }
